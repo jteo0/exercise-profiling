@@ -1,5 +1,17 @@
 # Modul 5
-1. d
+1. JMeter menggunakan thread group dan meng-approach performance testing dengan menggunakan thread profiling. Intellij Profiler menggunakan CPU dan Memory profiling, dengan bagian yang mengambil waktu/memori yang paling tinggi bisa dilihat dari hasil profiling. JMeter hanya menunjukkan hasil jalan thread secara langsung (bukan bagiannya).
+
+2. Proses profiling menolong saya untuk melihat apakah program berjalan secara konsisten, serta kecepatan jalannya secara spesifik. Bagian yang paling pelan atau yang sebaiknya dioptimisasi jelas terlihat jika menggunakan Intellij Profiler.
+
+3. Iya. Intellij Profilier menolong saya melihat bagian dari program saya yang masih jelas bisa dioptimisasi lagi, atau yang <i>slowing down</i> seluruh program.
+
+4. Kesulitan terbesar yang saya hadapi dalam profiling dan performance testing pada modul ini adalah dalam mengkomparasi performance pre dan post refactoring dari /highest-gpa. Kedua method yang saya ubah sebelumnya memiliki perubahan performance yang cukup jelas, sedangkan saat saya mengecek kecepatan run endpoint menggunakan postman, performance post-refactoring kurang konsisten, dan juga tidak begitu beda dengan yang pre-refactoring. Kesulitan ini diselesaikan dengan menggunakan fitur di Intellij Profiler yang menunjukkan runtime suatu method saat dilakukan profiling.
+
+5. Menurut saya, keunggulan utamanya adalah saya dapat melihat secara jelas runtime setiap bagian (sampai method), sehingga bisa melihat kelemahan/weak point dimana program saya berjalan dengan relatif pelan.
+
+6. Yang pertama saya akan lakukan adalah run proses profiling dengan keduanya lagi. Jika setelah itu masih berbeda/tidak konsisten sama, saya akan mengecek ulang program saya/program lain yang sedang berjalan di sistem saya yang mungkin dapat mempengaruhi proses performance testing.
+
+7. Saya mengimplementasi strategi mengecek hasil dari suatu endpoint dengan menggunakan Postman sebelum melakukan perubahan apapun. Setelah itu, saya mencari nagian program yang terlihat bisa dioptimisasi lagi, dan saya coba untuk refactor dan membuatnya lebih optimized. Setelah diubah, saya menjalankannya dan cek hasil endpointnya dari postman lagi untuk mengecek bahwa hasilnya masih sama dan ada perubahan runtime positif (lebih cepat) yang signifikan. Saya mengecek postman beberapa kali untuk memastikan bahwa hasilnya konsisten.
 
 
 Screenshots:
